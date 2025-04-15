@@ -3,9 +3,7 @@ slug: /
 sidebar_position: 1
 ---
 
-# Introduction
-
-Nodefusion Account - User Manual
+# Nodefusion Account User Manual
 
 ## Getting Started
 
