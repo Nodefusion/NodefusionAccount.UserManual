@@ -39,4 +39,4 @@ Currently, only login with Microsoft Work or School account is supported (Micros
 
 ## Administration
 
-When you have role Tenant admin, you can do [tenant administration](/TenantAdministration).
+When you have role Tenant admin, you can do [tenant administration](./Tenant%20Administration/index.md).
