@@ -94,6 +94,12 @@ const config = {
           },
         ],
       },
+      algolia: {
+        appId: 'appid',
+        apiKey: 'apikey',
+        indexName: 'indexname',
+        insights: true,
+      },
       footer: {
         style: 'dark',
         links: [
