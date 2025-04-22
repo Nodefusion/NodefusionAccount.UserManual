@@ -80,7 +80,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/nodefusion-account.png',
       navbar: {
-        title: 'Introduction',
+        title: 'Nodefusion Account User Manual',
         logo: {
           alt: 'Nodefusion Account',
           src: 'img/nfnaccount-heading-logo-light.svg',
