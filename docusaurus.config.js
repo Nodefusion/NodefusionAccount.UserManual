@@ -94,6 +94,9 @@ const config = {
           },
         ],
       },
+      colorMode: {
+        respectPrefersColorScheme: true,
+      },
       algolia: {
         appId: 'appid',
         apiKey: 'apikey',
