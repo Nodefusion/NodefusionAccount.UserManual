@@ -51,6 +51,12 @@ const config = {
           editUrl:
             'https://github.com/Nodefusion/NodefusionAccount.UserManual/tree/main/',
         },
+        gtag: {
+          trackingID: 'G-RKP1Z2TM6J'
+        },
+        googleTagManager: {
+          containerId: 'GTM-W56JJCVG'
+        },
         // blog: {
         //   showReadingTime: true,
         //   feedOptions: {
