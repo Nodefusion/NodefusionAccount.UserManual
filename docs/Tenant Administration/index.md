@@ -24,8 +24,8 @@
 
 1. Go to Microsoft Entra, Enterprise Applications, choose + New Application on the ribbon
 1. Then from 'Browse Microsoft Entra Gallery' choose + Create your own application on the ribbon
-1. Enter Nodefusion Account SCIM and choose: _**Integrate any other application you don't find in the gallery (Non-gallery)**_
-1. Open Nodefusion Account SCIM - and then Provisioning - then again Provisioning
+1. Enter 'Nodefusion Account SCIM' and choose: _**Integrate any other application you don't find in the gallery (Non-gallery)**_
+1. Open 'Nodefusion Account SCIM' - and then Provisioning - then again Provisioning
     1. Set Provisioning Mode to Automatic
     1. For Tenant URL enter: [https://login.nodefusion.com/scim/v2](https://login.nodefusion.com/scim/v2)
     1. Paste your previously generated APIKey under Secret Token
@@ -38,3 +38,23 @@ _You should edit externalId mapping to map objectId source attribute and to be s
 Mappings other than this five from picture should be deleted_
 
 After configuring mappings you can check if provisioning works by using provision on demand functionality on Microsoft Entra. After that you can proceed to configure which part of your directory will be synced to Nodefusion Account, how often and so on.
+
+### Specifying Users for Provisioning via Security Group
+
+After you have created and configured the provisioning application, follow these steps to control which users are provisioned to Nodefusion Account:
+
+1. **Create a new Microsoft Entra Security Group**
+    - Go to Microsoft Entra, Groups, and select **+ New group**.
+    - Set the group type to **Security**.
+    - Name the group: `NodefusionAccount-SCIM-Users`.
+    - Add users you want to provision to Nodefusion Account as members of this group.
+    - Click **Create** to save the group.
+
+1. **Assign the Security Group to the Nodefusion Account SCIM Application**
+    - Go to Microsoft Entra, Enterprise Applications, and select your **Nodefusion Account SCIM** application.
+    - In the left menu, select **Users and groups**.
+    - Click **+ Add user/group**.
+    - Search for and select the `NodefusionAccount-SCIM-Users` group.
+    - Click **Assign**.
+
+Only users who are members of the `NodefusionAccount-SCIM-Users` group will be provisioned to Nodefusion Account. To manage provisioning, simply add or remove users from this group as needed.
