@@ -168,9 +168,9 @@ const config = {
         ],
       },
       algolia: {
-        appId: 'appid',
-        apiKey: 'apikey',
-        indexName: 'indexname',
+        appId: '84PFU8IU22',
+        apiKey: '003503ea18de3049f9c91750b5f8108f',
+        indexName: 'Nodefusion Account User Manual',
         insights: true,
       },
       colorMode: {
